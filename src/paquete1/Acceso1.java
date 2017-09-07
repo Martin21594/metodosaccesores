@@ -6,17 +6,43 @@ public class Acceso1 {
     
      private int edad;
      private double altura=35;
-     static String nombre;
+     private String nombre;
      private double peso;
      
                 public void setEdad(int e){  
                 edad=e;
-                 }
-     
-                public int getEdad(){
-                return edad;
-                 }
+                 }//asigna el valor al atributo para llamarlo desde otra clase.
+                
+                 public int getEdad(){
+                 return edad;
+                 }//devuelve el valor del atributo cuando llamas de otra clase.
       
+                
+                public void setnombre(String e){
+                nombre=e;
+                 }//asigna el valor al atributo para llamarlo desde otra clase.
+     
+                public String getnombre(){
+                return nombre;
+                 }//devuelve el valor del atributo cuando llamas de otra clase.
+                
+                
+                public void setaltura(double e){
+                    altura=e;
+                }
+                public double getaltura(){
+                    return altura;
+                }
+                
+                
+                public void setpeso(double e){
+                    peso=e;
+                }
+                public double getpeso(){
+                    return peso;
+                }
+                
+                
     
             public static void main(String [] args){
     
